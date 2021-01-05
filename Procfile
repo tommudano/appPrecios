@@ -1,1 +1,1 @@
-web: gunicorn yaguar.py
+web: gunicorn yaguar.py:home
