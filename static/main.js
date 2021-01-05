@@ -22,7 +22,7 @@ const App = (function(DataCtrl) {
 
     const buscar = async busqueda => {
         await coto(busqueda);
-        // await carrefour(busqueda);
+        await carrefour(busqueda);
         await yaguar(busqueda);
         await maxiconsumo(busqueda);
     }
