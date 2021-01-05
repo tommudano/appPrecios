@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativa de Precios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="col-md">
+            <div class="mx-auto">
+                <h2 class="mb-2 text-center">Buscar Precios</h2>
+                <form action="" id="formBusqueda" autocomplete="off">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Producto a Buscar</label>
+                        <input type="text" class="form-control" id="busqueda" aria-describedby="busquedaProd" placeholder="Ingresar producto a buscar" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Coincidencia</label>
+                        <input type="text" class="form-control" id="coincidencia" placeholder="Ingrese la coincidencia de búsqueda" autocomplete="off">
+                    </div>
+                    <button type="submit" class="btn btn-warning" id="btn">Buscar</button>
+                    <img src="{{url_for('static', filename='loader.gif')}}" alt="Cargando..." height="90px" style="display:none" id="loader">
+                </form>
+
+                <div id="resultados" class="">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+</body>
+</html>
