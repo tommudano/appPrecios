@@ -1,1 +1,1 @@
-web: gunicorn yaguar.py:home
+web: gunicorn run:app
